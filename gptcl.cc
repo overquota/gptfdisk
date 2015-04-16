@@ -190,6 +190,7 @@ int GPTDataCL::DoOptions(int argc, char* argv[]) {
                case 'b':
                   SaveGPTBackup(backupFile);
                   free(backupFile);
+                  saveData = 1;
                   break;
                case 'c':
                   JustLooking(0);
